@@ -87,3 +87,13 @@ Example with native "slice"(`old`)
 ```typescript
 
 ```
+
+# RTK Query 
+
+RTK Query allows to make automatically error and loading handlers. Also, it stores request
+and allows not to make the same request, if we need, but take data from storage. Simpler to say
+RTK query cashes request. Even if we update query parameter of RTK hook, we still 
+receive updated data only in place, where we changed this query, and in another place
+it doesn't change. 
+
+In RTK we have refetch method, that allows us to refetch data forced.
